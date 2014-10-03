@@ -1,0 +1,16 @@
+<div class="celtra-ad-v3">
+    <img src="data:image/png,celtra" style="display: none" onerror="
+        (function(img) {
+            var params = {'clickUrl':'','preferredClickThroughWindow':'','clickEvent':'advertiser','externalAdServer':'Custom'};
+            var req = document.createElement('script');
+            req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
+            params.clientTimestamp = new Date/1000;
+            var src = (window.location.protocol == 'https:' ? 'https' : 'http') + '://ads.mab-luka.celtra-test.com/50d5ddec/web.js?';
+            for (var k in params) {
+                src += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
+            }
+            req.src = src;
+            img.parentNode.insertBefore(req, img.nextSibling);
+        })(this);
+    "/>
+</div> 
