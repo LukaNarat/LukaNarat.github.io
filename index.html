@@ -5,7 +5,7 @@
             var req = document.createElement('script');
             req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
             params.clientTimestamp = new Date/1000;
-            var src = (window.location.protocol == 'https:' ? 'https' : 'http') + '://ads.celtra.com/50d5ddec/web.js?';
+            var src = (window.location.protocol == 'https:' ? 'https' : 'http') + '://ads.mab.simon/d4a4bf08/web.js?';
             for (var k in params) {
                 src += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
             }
@@ -13,4 +13,4 @@
             img.parentNode.insertBefore(req, img.nextSibling);
         })(this);
     "/>
-</div> 
+</div>
