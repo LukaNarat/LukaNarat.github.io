@@ -5,7 +5,7 @@
             var req = document.createElement('script');
             req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
             params.clientTimestamp = new Date/1000;
-            var src = (window.location.protocol == 'https:' ? 'https' : 'http') + '://ads.luka.celtra-test.com/50d5ddec/web.js?';
+            var src = (window.location.protocol == 'https:' ? 'https' : 'http') + '://ads.celtra.com/50d5ddec/web.js?';
             for (var k in params) {
                 src += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
             }
